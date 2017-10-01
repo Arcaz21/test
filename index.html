@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title>Arcaz21 - About Me</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/imageGrid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+</head>
+<!--NOTES:
+1. do NavBar
+2. Research about product tagging?
+3. do Footer
+4. Enhance NavBar
+5. Enhance about me
+6. Enhance Footer
+7. Add images
+8. Edit text (Proof Read)
+9...
+-->
+
+<body onscroll="myFunction()">
+<!-- MyNavBar -->
+    <div id="navbar">
+        <div id="navbar1">
+                <a href="#about" id="about-nav">About Me</a>
+        </div>
+        <div id="navbar2">
+                <a href="#photo" id="photo-nav">Portfolio</a>
+        </div>
+        <div id="navbar3">
+                <a href="#contact" id="contact-nav">Contact</a>
+        </div>
+    </div>
+<!--Paralax 1-->
+    <div class="para1">
+        <div >
+            <span class="top-logo"><a href="#about"><img  href="#about" src="styles/images/arcazV2W.png"></a></span>
+            
+            
+        </div>
+    </div>
+    
+<!-- About me -->
+    <div id="about" class="content">
+            <div class="container">
+                    <img class="image" alt="Avatar" src="styles/images/prof.jpg"> 
+                    <div class="overlay">
+                      <div class="text">ARCAZ</div>
+                    </div>
+                    
+    </div>
+        <div id="Student" class="tab-content">
+            <h3>Student</h3>
+            <p style="font-family: Bitter">
+                John Lemuel N. Suarez is a student of a state university, University of Southeastern Philippines, in the city of Davao. He is currently taking up Bachelor of Science in Computer Science which he is not really good at.
+                He like programming and database design but unfortunatly sucks at mathimatics and most written exams. He is pretty good at practical exams though, being a visual learner help him out in that area.
+            </p>
+            <p style="font-family: Bitter">He started his journey in the university with a big mistake. Hoping to take up a course related to technology he wandered around the university..</p>
+
+            <div>
+
+            </div>
+        </div>
+
+        <div id="Photography" class="tab-content">
+            <h3>Photography</h3>
+            <p style="font-family: Arial">
+                You're right! He loves taking <a href="#photos">pictures</a>. As a high-school student he competed on various photography competition locally and nationally.
+                But when on his late high-school day his tool for taking photo was stolen. Can't afford on buying a new one he just put his hobby aside and set-out for college. 
+                Where a new type on photography genre met him. 
+            </p>
+        </div>
+
+        <div id="Soon..." class="tab-content">
+            <h3>"Computers"</h3>
+            <em>Soon... </em>
+        </div>
+
+        <div id="Coming..." class="tab-content">
+            <h3>Coming...</h3>
+            <em>Coming... </em>
+        </div>
+
+        <button class="tab-link" onclick="openAbout('Student', this, '#abe9d2')" id="defaultOpen">Student</button>
+        <button class="tab-link" onclick="openAbout('Photography', this, '#23a5bb')">Photography</button>
+        <button class="tab-link" onclick="openAbout('Soon...', this, '#2067a9')">Soon...</button>
+        <button class="tab-link" onclick="openAbout('Coming...', this, '#345368')">Coming...</button>
+        <script>
+            function openAbout(cityName, elmnt, color) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tab-link");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+                document.getElementById(cityName).style.display = "block";
+                elmnt.style.backgroundColor = color;
+
+            }
+            document.getElementById("defaultOpen").click();
+        </script>
+    </div>
+    <!--END►About me-->
+<!--Paralax 2-->
+    <div class="para2">
+
+    </div>
+<!--Photographs--> 
+    <div class="content" id="photo">
+        <!-- Portfolio Gallery Grid -->
+<div class="row">
+    <div class="column">
+      <div class="content-photos">
+        <img src="styles/images/grid/1c.jpg" alt="Photos" style="width:100%">
+        <h3>Lantern Tree</h3>
+        <p>A tree in a restaurant in the middle of a salt water lake near Tagum City, Philippines.
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/2c.jpg" alt="Photos" style="width:100%">
+        <h3>Beauty of Traffic</h3>
+        <p> The traffic of Diversion Road (Pan-Philippine Highway). Taken on the top of Vista View Resto, Brgy. Langb, Davao City  </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/3c.jpg" alt="Photos" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content-photos">
+      <img src="styles/images/grid/4c.jpg" alt="Photos" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content-photos">
+    <img src="styles/images/grid/1s.jpg" alt="Photos" style="width:100%">
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  </div>
+                
+            </div> 
+            <!--END►Photography-->
+<!--Scrolling Script-->
+    <script>
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.scrollY >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+    </script>
+</body>
+
+</html>
